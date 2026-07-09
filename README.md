@@ -1,76 +1,21 @@
-# 🎬 Movie Recommendation System
+---
 
-🚀 A Machine Learning project that recommends similar movies using NLP and cosine similarity.
+## 🛠️ Tech Stack & Libraries
+- **Language:** Python 🐍
+- **Machine Learning & NLP:** Scikit-learn (CountVectorizer, Cosine Similarity)
+- **Data Manipulation:** Pandas, NumPy
+- **Data Visualization:** Matplotlib, Seaborn
+- **Web App Framework:** Streamlit
 
 ---
 
-## 🔥 Features
-
-* 🎯 Recommend top 5 similar movies
-* 🧠 Uses NLP (CountVectorizer)
-* 📊 Includes EDA (graphs + wordcloud)
-* 🎨 Streamlit UI for interaction
-
----
-
-## 📸 Preview
-
-### 🎬 Output
-
-<img width="1773" height="838" alt="Screenshot 2026-04-05 235222" src="https://github.com/user-attachments/assets/6d23ff32-ba1c-4bca-b048-a7c9dc1918eb" />
-
-
-### 📊 EDA Graph
-
-<img width="1312" height="622" alt="Screenshot 2026-04-05 235018" src="https://github.com/user-attachments/assets/15d2499b-19d9-49d8-89a9-ac31376661fb" />
-
-
----
-
-## 🧠 Tech Stack
-
-* Python
-* Pandas, NumPy
-* Scikit-learn
-* Matplotlib, Seaborn
-* Streamlit
-
----
-
-## 📁 Project Structure
-
-
-movie-recommender/
+## 📂 Project Structure
+```text
+movie-recommendation-system/
 │
-├── data/
-├── notebook/
-├── src/
-├── app/
-
-
----
-
-## ▶️ Run Locally
-
-```bash
-pip install -r requirements.txt
-streamlit run app/app.py
-```
-
----
-
-## 💡 Example
-
-Input: Avatar
-
-Output:
-
-* Guardians of the Galaxy
-* Star Trek
-* John Carter
-* The Fifth Element
-* Aliens vs Predator
-
----
-
-⭐ If you like this project, give it a star!
+├── app.py                 # Streamlit main application script
+├── movie_dict.pkl         # Serialized movie dataset
+├── similarity.pkl         # Precomputed Cosine Similarity matrix
+├── TMDB_5000_movies.csv   # Raw movie dataset
+├── requirements.txt       # Project dependencies
+└── README.md              # Project documentation
